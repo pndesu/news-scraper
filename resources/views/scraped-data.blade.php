@@ -9,11 +9,13 @@
     <h1>News Updates</h1>
     <table border="1">
         <tr>
+            <th>Category</th>
             <th>Title</th>
             <th>Link</th>
         </tr>
         @foreach ($data as $item)
             <tr>
+                <td>{{ $item['category']}}</td>
                 <td>{{ $item['title'] }}</td>
                 <td><a href="{{ $item['link'] }}">View</a></td>
             </tr>
