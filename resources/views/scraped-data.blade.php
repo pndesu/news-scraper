@@ -12,12 +12,14 @@
             <th>Category</th>
             <th>Title</th>
             <th>Link</th>
+            <th>Summary</th>
         </tr>
         @foreach ($data as $item)
             <tr>
                 <td>{{ $item['category']}}</td>
                 <td>{{ $item['title'] }}</td>
                 <td><a href="{{ $item['link'] }}">View</a></td>
+                <td>{{ $item['summary']}}</td>
             </tr>
         @endforeach
     </table>
